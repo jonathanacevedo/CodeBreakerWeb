@@ -1,0 +1,25 @@
+<div class="containerMain">
+<h1 class="titulo">Code Breaker</h1>
+<br>
+<img src="../../assets/imagenes/image.png" class="imagen" alt="Guest">
+<br>
+<div style="padding: 20px;">
+  <div class="form-group col-md-4" style="text-align: center; width: 90%; margin: 0 auto;">
+    <input style="text-align: center;" [(ngModel)]="value" type="email" class="form-control"
+      id="inputEmail4" placeholder="Secret">
+  </div>
+  <br>
+  <button class="boton" (click)="validateValue()" >Guest</button>
+</div>
+<br>
+<div class="containerResultado">
+  <label>Resultado:</label>
+  <div style="border-style: dotted; width: 30%; margin: 0 auto; height: 60px;">
+    <div style="font-size: 1.8rem;">{{resp.result}}
+    </div>
+    <br>
+    <div>{{resp.message}}</div>
+  </div>
+</div>
+
+</div>
